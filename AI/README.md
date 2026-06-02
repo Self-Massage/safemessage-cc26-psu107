@@ -1,5 +1,5 @@
 # REST API AI
-https://drive.google.com/drive/folders/1KeUsUJs10p1xqKyQUQ_oi-GpJ5r3txQe
+https://drive.google.com/drive/folders/1KeUsUJs10p1xqKyQUQ_oi-GpJ5r3txQe?usp=sharing
 
 # SafeMessage — AI Workspace
 
