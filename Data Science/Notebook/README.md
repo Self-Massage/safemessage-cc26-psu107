@@ -16,7 +16,7 @@ Jalankan notebook sesuai urutan berikut:
 1. `data_wrangling.ipynb` → menghasilkan dataset processed
 2. `eda.ipynb` → membutuhkan output dari data wrangling
 3. `ab_testing.ipynb` → membutuhkan model dari tim AI
-4. `dashboard/app.py` → membutuhkan output dari EDA dan model
+4. `dashboard/dashboard.py` → membutuhkan output dari EDA dan model
 
 ## Prerequisites
 Pastikan sudah install semua library yang dibutuhkan:
