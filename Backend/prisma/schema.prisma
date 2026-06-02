@@ -1,0 +1,44 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id        String     @id @default(uuid())
+  name      String
+  email     String     @unique
+  password  String
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  histories History[]
+  feedbacks Feedback[]
+}
+
+model History {
+  id            String   @id @default(uuid())
+  message       String
+  status        String   // "safe" or "phishing"
+  reason        String
+  confidence    Float?
+  rekomendasi   String?
+  phishingScore Float?
+  normalScore   Float?
+  label         String?
+  timestamp     DateTime @default(now())
+  userId        String
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Feedback {
+  id        String   @id @default(uuid())
+  category  String
+  message   String
+  email     String?
+  timestamp DateTime @default(now())
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+}
