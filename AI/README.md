@@ -1,7 +1,7 @@
 # REST API AI
 https://drive.google.com/file/d/1sOVA57cHHycb47erw5xv3y2aq5Jx6que/view?usp=sharing
 
-# SafeMessage — AI & Data Science Workspace
+# SafeMessage — AI Workspace
 
 Folder ini berisi workflow tim AI untuk proyek **SafeMessage**, sistem deteksi phishing message Bahasa Indonesia berbasis **Natural Language Processing (NLP)** menggunakan arsitektur **TextCNN**.
 
